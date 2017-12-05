@@ -9,7 +9,7 @@ $(document).ready(function(){
                          ' <button id="delete">Delete</button> <button id="edit">Edit</button></li><hr>');
     });
   }).fail(function(data) {
-    alert('SERVER FAILURE');
+    Materialize.toast(data.message, 1000);
   });
 
   $('#user-form').submit(function(e){
@@ -23,7 +23,7 @@ $(document).ready(function(){
     }).done(function(data) {
       location.reload()
     }).fail(function(data) {
-      Materialize.toast(data.message, 4000);
+      Materialize.toast(data.message, 1000);
     });
   });
 
@@ -37,7 +37,7 @@ $(document).ready(function(){
     }).done(function(data) {
       $item.remove();
     }).fail(function(data) {
-      Materialize.toast(data.message, 4000);
+      Materialize.toast(data.message, 1000);
     });
   });
 
@@ -58,7 +58,7 @@ $(document).ready(function(){
       }).done(function(data) {
         location.reload()
       }).fail(function(data) {
-        Materialize.toast(data.message, 4000);
+        Materialize.toast(data.message, 1000);
       });
     });
   });
