@@ -15,3 +15,26 @@
  */
 
  @import "materialize";
+
+.form {
+  background-color: #edf1f4;
+  box-shadow: 0 10px 6px -6px #777;
+  color: #333;
+  margin-bottom: 3%;
+  padding: 5%;
+}
+
+.welcome {
+  background-color: #3D405B;
+  color: white;
+  margin-top: 3%;
+  padding: 0.5%;
+  h1 {
+    margin-left: 5%;
+  }
+}
+
+#delete {
+  color: white;
+  background-color: red; 
+}
